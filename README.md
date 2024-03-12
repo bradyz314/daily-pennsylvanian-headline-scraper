@@ -135,3 +135,8 @@ But it is important to use it responsibly and ethically. Here are some guideline
 9. Document your scraping process thoroughly for replicability, transparency and accountability.
 
 10. Continuously re-evaluate your scraping program against applicable laws and ethical principles.
+
+## Changes Made
+I wanted to update the scraper to instead grab the first article in the Most Recent sidebar on the Daily Pennsylvanian's main page.
+In order to accomplish this, I first found the div containing the most recent articles by searching for a div with the top-story-sidebar class.
+Then, I used the result from that function to search for the div that would contain the first article by searching for a div with the sidebar-story class. Lastly, I got the actual target by searching for the link in the div. From that point on, I reused the existing code to get the text contents of the link.
